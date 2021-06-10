@@ -25,7 +25,7 @@
                 </a>                
             </h1>            
             <div class='video_resolution'>
-                <select class='lang' style='padding-top: 3px; padding-bottom: 3px;'>
+                <select class='lang' style="padding-top: 3px; padding-bottom: 3px;">
                     <option value='row'>Low</option>
                     <option value='HD'>High(HD)</option>
                     <option value='FHD'>Very heigh(FHD)</option>        
@@ -35,6 +35,8 @@
             <div class='video_btn'>                
                 <div class='video_icon pc'>
                     <ul class='video_set'>
+                        <li><a href='#none' class='vinfo_btn' />
+                        </a></li>
                         <li><a href='#none' class='oneview_btn' />
                         </a></li>
                         <li><a href='#none' class='freeview_btn' />
@@ -519,7 +521,8 @@
                         <a href='#none' class='file_down' /></a>
                         <!-- 수정 0524 오후 ___ END -->
                         <div class='flie_name_wrap'>
-                            <p class='file_name'>giga_livetvgiga_livetvgiga_livetvgiga_livetv.jpg</p>              
+                            <!-- 0609 오후 p.file_name 클래스 추가-->
+                            <p class='file_name' style="white-space: nowrap;">giga_livetvgiga_livetvgiga_livetvgiga_livetv.jpg</p>              
                         </div>
                     </div>                              
                     </div>
@@ -636,6 +639,7 @@
     $('.info_btn').click(function(){
         $(this).toggleClass('off');
         $(this).parent('div').toggleClass('off');
+        $('.tts_set').removeClass('move'); /* 0609 오후 추가 */
         if($(this).parent('div').siblings('.info_cont').hasClass('off')){
             $('.main_video_area').toggleClass('re'); // 임시
             $('.wb_area').toggleClass('re');
@@ -650,6 +654,7 @@
         }
     });
     
+ 
 </script>
 </body>
 </html>
