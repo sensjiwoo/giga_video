@@ -92,11 +92,11 @@ header.video .video_resolution {
     display: none;
 }
 .m_menu_list {
-    border-top: 1px solid #4e545934;
+    border-top: 1px solid #d8d8d8;
 }
 .m_menu_list li {
     height: 60px;
-    border-bottom: 1px solid #4e545934;
+    border-bottom: 1px solid #d8d8d8;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: 30px;
